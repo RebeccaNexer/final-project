@@ -4,16 +4,37 @@ import { createSlice } from "@reduxjs/toolkit";
 const questions = [
   {
     id: 1,
-    questionText: "Who set the Olympic record for the 100m dash in 2012?",
-    options: ["Usain Bolt", "Justin Gatlin", "Tyson Gay", "Asafa Powell"],
+    questionText: "Vad betyder advent?",
+    options: ["1. Herrens ankomst", "X. I väntan", "2. Förberedelser"],
     correctAnswerIndex: 0
   },
   {
     id: 2,
     questionText:
-      "When was Michael Phelps last named male World Swimmer of the Year?",
-    options: ["2012", "2014", "2016", "2018"],
+      "Låten Oh helga natt har på svenska också ett namn efter sin upphovsman, vad kallas låten då?",
+    options: ["1. Emils julvisa", "X. Adams julsång", "2. Idas julvisa"],
+    correctAnswerIndex: 1
+  },
+  {
+    id: 3,
+    questionText:
+      "Idag finns julkalendrar i varianter med choklad och presenter, men när kom den första julkalendern i papp?",
+    options: ["1. 1905", "X. 1967", "2. 1939"],
     correctAnswerIndex: 2
+  },
+  {
+    id: 4,
+    questionText:
+      "Den moderna tomten som avbildas i röd dräkt och stort vitt skägg är ursprungligen baserad på St: Nicholas, en ärkebiskop från Myra. I vilket nuvarande land skulle han varit född?",
+    options: ["1. Armenien", "X. Irak", "2. Turkiet"],
+    correctAnswerIndex: 2
+  },
+  {
+    id: 5,
+    questionText:
+      "Ungefär hur mycket julskinka äts det per person till jul i Sverige varje år?",
+    options: ["1. 300 gram", "X. 1 kilo", "2. 580 gram"],
+    correctAnswerIndex: 1
   }
 ];
 
