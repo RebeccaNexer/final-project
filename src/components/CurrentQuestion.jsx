@@ -49,26 +49,31 @@ const answerOptions = (questionId, answerIndex) => {
     <div className="container">
     <Snowflakes />
       <h1>Julquiz 🎄</h1>
-      <h2>Fråga: {question.questionText}</h2>
+      <h2>{question.questionText}</h2>
 
       <div className="answers">
       {question.options.map((option, index) => {
             return (
               <button
                 type="button"
+                className="buttons"
                 id={index}
                 disabled={disable}
                 key={option}
                 onClick={() => answerOptions(question.id, index)}>
                 {option}
-              </button>
+              </button>        
             )
           })}
         <p id="answer" className="font-bold"></p>
       </div>
+  <div className="next">
+  <button onClick={nextQuestion} className="font-bold">Nästa julfråga</button>
+  </div>
+  <div className="length">
+    <QuizLength />
+  </div>
 
-      <button onClick={nextQuestion} className="font-bold">Nästa julfråga</button>
-      <QuizLength />
     </div>
   );
 };

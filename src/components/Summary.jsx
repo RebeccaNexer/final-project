@@ -8,7 +8,8 @@ export const Summary = () => {
 
   return (
     <div className="container">
-        <h3>🎅🏻 Du fick {correctAnswers} rätt av 6 julfrågor! 🎅🏻</h3>
+        <h3>Du fick {correctAnswers} rätt av 6 julfrågor!</h3>
+        <p className="santa">🎅🏻🎅🏻🎅🏻🎅🏻🎅🏻🎅🏻</p>
         <button type="button" className="font-bold" onClick={() => dispatch(quiz.actions.restart())}>Börja om</button> 
     </div>
   )
