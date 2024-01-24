@@ -16,8 +16,7 @@ import { Inspiration } from './components/Inspiration';
 // };
 
 
-// const store = configureStore({ reducer });
-// const GOOGLE_MAPS_API = "AIzaSyCEg0kxxEzMUNkBqVqmCW1sSBYOKzHfDEM";
+
 // // const position = {lat: 53.54992, lng: 10.00678};
 
 const routes = (
