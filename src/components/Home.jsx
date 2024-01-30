@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import AddPlace from './AddPlace';
+import homeLogo from '../assets/logos/1gcc.png';
 
 export const Home = () => {
     const [selectedItem, setSelectedItem] = useState("Alla")
@@ -9,7 +10,7 @@ export const Home = () => {
 
      return (
       <div className="container text-m">
-        <div className="homelogo"><img src="/src/assets/logos/1gcc.png" alt="logo home" /></div>
+        <div className="homelogo"><img src={homeLogo} alt="logo home" /></div>
         <div className="home">
         <h2>Välkommen till GCC! Här kan du hitta nya platser för en hållbar livsstil genom olika kategorier. Spara dina favoriter genom att lägga till dem i din lista över favoritställen nedan.</h2>
         <p className="hometitle">Du har valt kategori: {selectedItem}</p>
