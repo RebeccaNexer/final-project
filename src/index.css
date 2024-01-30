@@ -1,9 +1,9 @@
 :root {
   margin: 0;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Marcellus', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #C4B98F;
+  background: #F1EFE9;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
 #C4B98F */
 
 code {
+font-family: 'Marcellus', serif;
 font-family: 'DM Sans', sans-serif;
 font-family: 'Fira Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
@@ -26,11 +27,17 @@ monospace;
 
 h1{
   margin: 0px;
+  color: #97772B;
+  font-family: 'Lilita One', sans-serif;
+  font-weight: lighter;
 }
 
 h2 {
 margin-top: 4px;
 font-size: 1.2rem;
+color: #97772B;
+font-family: 'Lilita One', sans-serif;
+font-weight: lighter;
 }
 .font-bold {
   font-weight: bold;
@@ -41,7 +48,8 @@ font-size: 1.2rem;
   flex-direction: column;
   padding: 20px;
   margin: auto;
-  max-width: 450px;
+  max-width: 580px;
+  gap: 10px;
 }
 
 button {
@@ -50,6 +58,7 @@ button {
   border-radius: 4px;
   max-width: 200px;
   font-size: 1rem;
+  font-family: 'Marcellus', serif;
 }
 
 .buttons {
@@ -76,11 +85,11 @@ ul li a {
  }
  
  ul li a:hover {
-  color: #C8A6A0;
+  color: #97772B;
  }
  
  ul li a.active {
-  color: #C8A6A0;
+  color: #97772B;
  }
 
  ul {
@@ -92,6 +101,105 @@ ul li a {
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 30px;
-  background-color: #537B58;
+  background-color: #ddde63;
   margin: 0px;
+  align-items: center;
  }
+
+ .navlogo{
+  height: 50px;
+  margin-top: 5px;
+ }
+
+ .home {
+  margin-bottom: 30px;
+ }
+
+ .form {
+  display: flex;
+ }
+
+ .label {
+  width: 100%;
+ }
+
+ select, input {
+  padding: 17px 7px;
+  margin-right: 10px;
+  min-width: 200px;
+ }
+
+ .place {
+  margin-top: 30px;
+ }
+
+ .divider {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .text-m {
+  font-size: 24px;
+ }
+
+ .box {
+  --size: 50px;
+  --p: 25px;
+  --R: 55.9px /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/;
+  
+  height: 140px;
+  border: 1px solid;
+  
+  background:
+    radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)),#ddde63 100%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100% no-repeat,
+    radial-gradient(var(--R) at 50% calc(-1*var(--p)),#0000 99%,#ddde63 100%) 50% var(--size)/calc(4*var(--size)) 100% no-repeat;
+}
+.box + .box {
+  background-repeat: repeat-x;
+}
+.box.mask {
+  -webkit-mask:
+    radial-gradient(var(--R) at 50% calc(var(--size) + var(--p)),#ddde63 99%,#0000 101%) calc(50% - 2*var(--size)) 0/calc(4*var(--size)) 100%,
+    radial-gradient(var(--R) at 50% calc(-1*var(--p)),#0000 99%,#ddde63 101%) 50% var(--size)/calc(4*var(--size)) 100% repeat-x;
+  background:linear-gradient(90deg,#ddde63,#ddde63);  
+  border: none;
+}
+
+.yellow {
+  background: #ddde63;
+  display: flex;
+  justify-content: center;
+  margin: -2px;
+  padding: 10px;
+}
+
+.tips {
+  margin-top: 15px;
+}
+
+.savedtitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container.saved {
+  min-height: 550px;
+}
+
+.hometitle {
+  margin-bottom: 0px;
+}
+
+.flex1 {
+  flex: 1 1 0%;
+}
+
+.last {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.homelogo {
+  display: flex;
+  justify-content: center;
+}

@@ -5,16 +5,18 @@ export const Saved = () => {
     const dispatch = useDispatch();
 
     return (
-    <div>
+    <>
+    <div className="container saved">
+      <h1 className="savedtitle">List with all your favorite sustainable GCC spots in Stockholm:</h1>
        {saved.map((item) => (
             <div className="divider" key={item.id}>
             <h2>• {item.text}</h2>
-                <span className="checkmark" />
                   <button className="btn-red" onClick={() => dispatch(places.actions.removeItem(item.id))}>
                     Ta bort
                   </button>
             </div>
         ))}
     </div>
+    </>
     );
 };

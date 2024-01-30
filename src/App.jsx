@@ -4,6 +4,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { Home } from './components/Home';
 import { Notfound } from './components/Notfound';
 import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 import { Inspiration } from './components/Inspiration';
 import { Saved } from './components/Saved';
 import { places } from './reducers/places';
@@ -30,6 +31,7 @@ export const App = () => {
        <BrowserRouter>
        <Navbar />
         {routes}
+        <Footer />
       </BrowserRouter>
    </Provider>
   );

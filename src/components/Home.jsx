@@ -8,11 +8,14 @@ export const Home = () => {
     }
 
      return (
-      <div className="container">
-        <h1>Green Closet Collective</h1>
-        <div>
-            <form>
-            <label htmlFor="Choose category">Välj kategori
+      <div className="container text-m">
+        <div className="homelogo"><img src="/src/assets/logos/1gcc.png" alt="logo home" /></div>
+        <div className="home">
+        <h2>Välkommen till GCC! Här kan du hitta nya platser för en hållbar livsstil genom olika kategorier. Spara dina favoriter genom att lägga till dem i din lista över favoritställen nedan.</h2>
+        <p className="hometitle">Du har valt kategori: {selectedItem}</p>
+
+            <form className="form">
+            <label className="label" htmlFor="Choose category"><p className="label">Välj kategori</p>
             <select name="Alla" value={selectedItem} onChange={handleChange}>
                 <option value="Alla">Alla</option>
                 <option value="Second hand">Second hand</option>
@@ -21,7 +24,6 @@ export const Home = () => {
             </label>
             </form>
 
-        <p>Du har valt {selectedItem}</p>
         </div>
 
         {selectedItem == "Alla" &&
@@ -36,7 +38,7 @@ export const Home = () => {
                  <iframe title="map repair" src="https://www.google.com/maps/d/u/0/embed?mid=1yvHSKNZr7dHkaVeCuBpx1Er0RHobuds&ehbc=2E312F" width="640" height="480"></iframe>        
         }
 
-        <div>
+        <div className="place">
             <AddPlace />
         </div>
         </div>
